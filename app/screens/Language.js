@@ -45,9 +45,9 @@ export default function Language({ navigation }) {
                 <View style={styles.wrapper}>
                     <View style={{ width: '100%' }}>
                         <Text adjustsFontSizeToFit style={{ fontSize: 18, marginBottom: 10 }}>Select a language:</Text>
-                        <AppRadio title='English' appContext={appContext.language} onPress={() => languageHandler('English')} />
-                        <AppRadio title='French' appContext={appContext.language} onPress={() => languageHandler('French')} />
-                        <AppRadio title='Spanish' appContext={appContext.language} onPress={() => languageHandler('Spanish')} />
+                        <AppRadio disabled={true} title='English' appContext={appContext.language} onPress={() => languageHandler('English')} />
+                        <AppRadio disabled={true} title='French' appContext={appContext.language} onPress={() => languageHandler('French')} />
+                        <AppRadio disabled={true} title='Spanish' appContext={appContext.language} onPress={() => languageHandler('Spanish')} />
                     </View>
 
                     <View style={{ width: '100%', alignItems: 'center' }}>

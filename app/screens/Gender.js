@@ -45,8 +45,8 @@ export default function Gender({ navigation }) {
                 <View style={styles.wrapper}>
                     <View style={{ width: '100%' }}>
                         <Text adjustsFontSizeToFit style={{ fontSize: 18, marginBottom: 10 }}>Select a gender:</Text>
-                        <AppRadio title='Jane' appContext={appContext.gender} onPress={() => genderHandler('Jane')} />
-                        <AppRadio title='James' appContext={appContext.gender} onPress={() => genderHandler('James')} />
+                        <AppRadio disabled={true} title='Jane' appContext={appContext.gender} onPress={() => genderHandler('Jane')} />
+                        <AppRadio disabled={true} title='James' appContext={appContext.gender} onPress={() => genderHandler('James')} />
                     </View>
                     <View style={{ width: '100%', alignItems: 'center' }}>
                         {!loading ? <AppButton title={appContext.isLaunched ? 'Ok' : 'Continue'} disabled={appContext.language ? false : true} onPress={() => continueHandler()} /> :

@@ -1,9 +1,9 @@
 import React from 'react';
 import { StyleSheet, TouchableWithoutFeedback, View, Text } from 'react-native';
 
-export default function AppRadio({ title, onPress, appContext }) {
+export default function AppRadio({ title, onPress, appContext, disabled }) {
     return (
-        <TouchableWithoutFeedback onPress={onPress}>
+        <TouchableWithoutFeedback disabled={disabled} onPress={onPress}>
             <View style={styles.container}>
                 <View style={[styles.border,{borderColor:appContext === title?'black':'grey'}]}>
                     {appContext === title && <View style={styles.selected} />}

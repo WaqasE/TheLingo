@@ -14,7 +14,8 @@ import PlayRecording from "./PlayRecording";
 import QuestionPlayer from "./QuestionPlayer";
 import Parameters from "./Parameters";
 import Recordings from "./Recordings";
+import Privacy from "./Privacy";
 
 
 
-export { Welcome, Language, Gender, Mode, Help, Share, AboutUs, Questions, Interview, Player, PlayRecording, QuestionPlayer, Parameters, Recordings };
+export { Welcome, Language, Gender, Mode, Help, Share, AboutUs, Questions, Interview, Player, PlayRecording, QuestionPlayer, Parameters, Recordings, Privacy };

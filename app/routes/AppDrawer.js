@@ -14,7 +14,7 @@ const { height, width } = Dimensions.get('screen');
 
 
 import AppTab from './AppTab'
-import { Language, Gender, Mode, Help, Share, AboutUs } from '../screens/'
+import { Language, Gender, Mode, Help, Share, AboutUs, Privacy } from '../screens/'
 import { removeData, getData } from '../cache/UserStorage';
 import { Playlist } from '../constants';
 
@@ -101,6 +101,11 @@ export default function AppDrawer() {
                             ? 'shuffle-variant'
                             : 'shuffle-variant';
                     }
+                    else if (route.name === 'Privacy Policy') {
+                        iconName = focused
+                            ? 'shield-check'
+                            : 'shield-check';
+                    }
                     else if (route.name === 'Log out') {
                         iconName = focused
                             ? 'logout'
@@ -118,6 +123,7 @@ export default function AppDrawer() {
             <Drawer.Screen name="Mode" component={Mode} />
             <Drawer.Screen name="Help" component={Help} />
             <Drawer.Screen name="About Us" component={AboutUs} />
+            <Drawer.Screen name="Privacy Policy" component={Privacy} />
             <Drawer.Screen name="Log out" component={Logout} />
         </Drawer.Navigator>
     );
