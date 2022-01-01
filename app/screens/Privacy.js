@@ -13,7 +13,7 @@ export default function Privacy({ navigation }) {
                 <ScrollView style={{ minHeight: height - 80, width, padding: 30 }}>
                     <Text style={styles.heading}>The Lingo Privacy Policy</Text>
                     <Text style={{ marginVertical: 10 }}>Privacy Policy</Text>
-                    <Text style={{ fontSize: 17, marginBottom: 100 }}>
+                    <Text style={{ fontSize: 17, paddingBottom: 250 }}>
                         Your privacy is important to us. It is EZIC policy to respect your privacy regarding any information we may collect from you through our app, The Lingó app.
                         We only ask for personal information when we truly need it to provide a service to you. We collect it by fair and lawful means, with your knowledge and consent. In this privacy policy we share what, how and why we’re collecting it and how it will be used.
                         We only retain collected information for as long as necessary to provide you with the service promised through The Lingó app . What data we store, we’ll protect within commercially acceptable means to prevent loss and theft, as well as unauthorised access, disclosure, copying, use or modification.
